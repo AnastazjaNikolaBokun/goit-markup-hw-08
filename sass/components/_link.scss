@@ -1,0 +1,37 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $mark-color;
+  }
+}
+
+.link--is-active {
+  color: $mark-color;
+
+  &::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-size: contain;
+    display: block;
+    background-color: $mark-color;
+    color: $mark-color;
+    border-radius: 2px;
+    margin-top: 28px;
+  }
+}
+
+.link--color {
+  color: $text-color-second;
+  padding: 0 0 0 10px;
+}
+
+.link--contact-footer {
+  display: block;
+  color: $text-color-fourth;
+  padding: 9px 0 0 0;
+}

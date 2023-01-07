@@ -1,0 +1,24 @@
+.main-banner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0 200px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/imgbackground.jpg);
+  background-size: cover;
+  text-align: center;
+  &__h1 {
+      max-width: 696px;
+  padding: 0 20px 30px 20px;
+  color: $text-color-third;
+  margin: auto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  }
+}

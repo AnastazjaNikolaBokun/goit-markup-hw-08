@@ -1,0 +1,59 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  padding: 0 215px 0 215px;
+  min-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px $border-header solid;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+  position: relative;
+  &__navigation {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    bottom: -1px;
+    left: 453px;
+    padding: 0;
+  }
+  &__navigation-item:nth-child(-n + 2) {
+    padding-right: 46px;
+    padding-bottom: 0;
+  }
+  &__address {
+    display: flex;
+    width: 666px;
+    padding: 0 0 0 325px;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: flex-start;
+  }
+  &__address-list {
+    display: flex;
+  }
+  &__address-list:hover svg,
+  &__address-list:focus svg {
+    fill: $mark-color;
+    color: $mark-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__address-list:hover a,
+  &__address-list:focus a {
+    fill: $text-color-third;
+    color: $mark-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 16px;
+    fill: $text-color-second;
+  }
+  &__icon--smartphone {
+    margin: 0 0 0 20px;
+  }
+}

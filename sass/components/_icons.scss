@@ -1,0 +1,83 @@
+.icon-main {
+  max-width: 270px;
+  max-height: 120px;
+  padding: 25px 0;
+  background-color: $button-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-team {
+  width: 44px;
+  height: 44px;
+  padding: 14px;
+  fill: $icon-team-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-team:hover,
+.icon-team:focus {
+  fill: var(--text-color-third);
+}
+
+.icon-small {
+  max-width: 44px;
+  max-height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $mark-color;
+  }
+  &__vector {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: $icon-team-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $text-color-third;
+    }
+  }
+}
+
+.icon-clients {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  fill: $icon-team-color;
+  border-color: $icon-team-color;
+  border-width: 1px;
+  border-style: solid;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $mark-color;
+    border-color: $mark-color;
+  }
+}
+
+.icon-footer {
+  max-width: 44px;
+  max-height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $mark-color;
+  }
+  &__vector {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: $text-color-third;
+  }
+  &__form {
+    width: 24px;
+    height: 24px;
+  }
+}

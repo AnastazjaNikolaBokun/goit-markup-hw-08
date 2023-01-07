@@ -1,0 +1,32 @@
+.header-third {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  &--footer-header-style {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 0 0 0;
+    margin: 0 0 0 0;
+  }
+  &--footer-text-style {
+    list-style: none;
+    padding: 20px 0 0 0;
+    margin: 0;
+  }
+  &__input {
+    min-width: 358px;
+    min-height: 50px;
+    background-color: $background-second;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $text-color-fourth;
+    padding-left: 16px;
+    margin-top: 20px;
+  }
+}
