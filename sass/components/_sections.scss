@@ -1,5 +1,5 @@
 .section {
-  padding: 94px 0 94px 0;
+  padding: 60px 15px 30px 15px;
   &__background {
     background-color: $button-color;
   }
@@ -7,4 +7,23 @@
 
 .section-two {
   padding: 0 0 94px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 15px 15px 15px;
+  }
+}
+
+@media screen and (max-width: 1199.5px) {
+  .section-two {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 15px 94px 15px;
+  }
 }

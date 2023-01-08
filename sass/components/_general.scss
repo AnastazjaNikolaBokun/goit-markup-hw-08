@@ -1,5 +1,5 @@
-.container > .section > .main-banner {
-  width: 1200px;
+.container {
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -9,6 +9,14 @@
 }
 
 .content-width {
-  max-width: 1200px;
+  min-width: 290px;
+  max-width: 450px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 768px) {
+  .content-width {
+    max-width: 768px;
+  }
+}
+

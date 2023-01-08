@@ -6,6 +6,7 @@
       name="description"
       content="Efektywne Rozwiązania Dla Waszego Biznesu"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link
       rel="stylesheet"
@@ -83,7 +84,7 @@
             <svg class="icon-main">
               <use href="./images/icons.svg#icon-antenna"></use>
             </svg>
-            <h3 class="header-third">Lorem Ipsum</h3>
+            <h3 class="header-third__list-1">Lorem Ipsum</h3>
             <p class="list-1__item">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -93,7 +94,7 @@
             <svg class="icon-main">
               <use href="./images/icons.svg#icon-clock"></use>
             </svg>
-            <h3 class="header-third">Lorem Ipsum</h3>
+            <h3 class="header-third__list-1">Lorem Ipsum</h3>
             <p class="list-1__item">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -103,7 +104,7 @@
             <svg class="icon-main">
               <use href="./images/icons.svg#icon-diagram"></use>
             </svg>
-            <h3 class="header-third">Lorem Ipsum</h3>
+            <h3 class="header-third__list-1">Lorem Ipsum</h3>
             <p class="list-1__item">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -113,7 +114,7 @@
             <svg class="icon-main">
               <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
-            <h3 class="header-third">Lorem Ipsum</h3>
+            <h3 class="header-third__list-1">Lorem Ipsum</h3>
             <p class="list-1__item">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
@@ -157,18 +158,25 @@
       </section>
       <section class="section section__background" id="agencja">
         <div class="content-width">
-          <h2 class="header-second">Nasz Zespół</h2>
+          <h2 class="header-second">Nasz zespół</h2>
           <ul class="picture-list-2">
             <li>
               <figure class="picture-list-2__figure">
                 <img
-                  src="images/img4.jpg"
-                  width="270"
-                  height="260"
-                  alt="zdjęcia członka zespołu"
+                  class="picture-list-2__img"
+                  alt="zdjęcie członka zespołu"
+                  src="images/img4-450.jpg"
+                  srcset="
+                    images/img4-354.jpg 354w,
+                    images/img4-450.jpg 450w,
+                    images/img4-540.jpg 540w,
+                    images/img4-708.jpg 708w,
+                    images/img4-900.jpg 900w
+                  "
+                  sizes="100vw"
                 />
-                <figcaption class="picture-list-2__figcaption">
-                  <h3>John doe</h3>
+                <figcaption>
+                  <h3 class="picture-list-2__h3">John doe</h3>
                   <p class="picture-list-2__text">Product Designer</p>
                   <div class="picture-list-2__icons">
                     <a
@@ -222,13 +230,20 @@
             <li>
               <figure class="picture-list-2__figure">
                 <img
-                  src="images/img5.jpg"
-                  width="270"
-                  height="260"
-                  alt="zdjęcia członka zespołu"
+                  class="picture-list-2__img"
+                  alt="zdjęcie członka zespołu"
+                  src="images/img5-450.jpg"
+                  srcset="
+                    images/img5-354.jpg 354w,
+                    images/img5-450.jpg 450w,
+                    images/img5-540.jpg 540w,
+                    images/img5-708.jpg 708w,
+                    images/img5-900.jpg 900w
+                  "
+                  sizes="100vw"
                 />
                 <figcaption>
-                  <h3>John doe</h3>
+                  <h3 class="picture-list-2__h3">John doe</h3>
                   <p class="picture-list-2__text">Frontend Developer</p>
                   <div class="picture-list-2__icons">
                     <a
@@ -282,13 +297,20 @@
             <li>
               <figure class="picture-list-2__figure">
                 <img
-                  src="images/img6.jpg"
-                  width="270"
-                  height="260"
-                  alt="zdjęcia członka zespołu"
+                  class="picture-list-2__img"
+                  alt="zdjęcie członka zespołu"
+                  src="images/img6-450.jpg"
+                  srcset="
+                    images/img6-354.jpg 354w,
+                    images/img6-450.jpg 450w,
+                    images/img6-540.jpg 540w,
+                    images/img6-708.jpg 708w,
+                    images/img6-900.jpg 900w
+                  "
+                  sizes="100vw"
                 />
                 <figcaption>
-                  <h3>John doe</h3>
+                  <h3 class="picture-list-2__h3">John doe</h3>
                   <p class="picture-list-2__text">Marketing</p>
                   <div class="picture-list-2__icons">
                     <a
@@ -342,13 +364,20 @@
             <li>
               <figure class="picture-list-2__figure">
                 <img
-                  src="images/img7.jpg"
-                  width="270"
-                  height="260"
-                  alt="zdjęcia członka zespołu"
+                  class="picture-list-2__img"
+                  alt="zdjęcie członka zespołu"
+                  src="images/img7-450.jpg"
+                  srcset="
+                    images/img7-354.jpg 354w,
+                    images/img7-450.jpg 450w,
+                    images/img7-540.jpg 540w,
+                    images/img7-708.jpg 708w,
+                    images/img7-900.jpg 900w
+                  "
+                  sizes="100vw"
                 />
                 <figcaption>
-                  <h3>John doe</h3>
+                  <h3 class="picture-list-2__h3">John doe</h3>
                   <p class="picture-list-2__text">UL Designer</p>
                   <div class="picture-list-2__icons">
                     <a
@@ -404,7 +433,7 @@
       </section>
       <section class="section">
         <div class="content-width">
-          <h2 class="header-second">Czym się zajmujemy</h2>
+          <h2 class="header-second">Nasi klienci</h2>
           <ul class="list-2">
             <li>
               <a

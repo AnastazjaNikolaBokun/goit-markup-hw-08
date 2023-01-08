@@ -1,5 +1,5 @@
 .icon-main {
-  max-width: 270px;
+  width: 100%;
   max-height: 120px;
   padding: 25px 0;
   background-color: $button-color;
@@ -44,7 +44,7 @@
 }
 
 .icon-clients {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   fill: $icon-team-color;
@@ -80,4 +80,22 @@
     width: 24px;
     height: 24px;
   }
+}
+
+@media screen and (min-width: 768px) {
+.icon-main {
+  width: 354px;
+}
+.icon-clients {
+  width: 226px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.icon-main {
+  width: 270px;
+}
+.icon-clients {
+  width: 170px;
+}
 }

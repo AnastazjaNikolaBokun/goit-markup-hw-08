@@ -1,24 +1,103 @@
 .main-banner {
-  max-width: 1600px;
+  min-width: 320px;
+  height: 400px;
   margin: 0 auto;
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/imgbackground.jpg);
+    url(../images/imgbackground-480.jpg);
   background-size: cover;
+  background-position: center;
   text-align: center;
   &__h1 {
+    max-width: 365px;
+    padding: 0 0 30px 0;
+    color: $text-color-third;
+    margin: auto;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 480px) and (min-resolution: 192dpi),
+  screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/imgbackground-960.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .main-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/imgbackground-768.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 481px) and (min-resolution: 192dpi),
+  screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/imgbackground-1536.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/imgbackground-1600.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (min-resolution: 192dpi),
+  screen and (min-width: 769x) and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/imgbackground-3200.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-banner {
+    height: 600px;
+    padding: 200px 0 200px 0;
+    &__h1 {
       max-width: 696px;
-  padding: 0 20px 30px 20px;
-  color: $text-color-third;
-  margin: auto;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  text-transform: uppercase;
-  text-align: center;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.36;
+    }
   }
 }

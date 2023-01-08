@@ -4,19 +4,20 @@
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
   &--footer-header-style {
     display: flex;
     flex-direction: column;
-    padding: 72px 0 0 0;
+    padding: 60px 0 20px 0;
     margin: 0 0 0 0;
   }
   &--footer-text-style {
     list-style: none;
-    padding: 20px 0 0 0;
-    margin: 0;
+    margin: auto;
   }
   &__input {
-    min-width: 358px;
+    width: 100%;
     min-height: 50px;
     background-color: $background-second;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,4 +30,15 @@
     padding-left: 16px;
     margin-top: 20px;
   }
+}
+
+@media screen and (min-width: 768px) {
+.header-third {
+&__list-1 {
+  text-align: left;
+}
+&--footer-header-style {
+      padding: 0 0 20px 0;
+}
+}
 }
