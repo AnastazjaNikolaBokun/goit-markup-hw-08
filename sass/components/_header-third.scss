@@ -33,12 +33,25 @@
 }
 
 @media screen and (min-width: 768px) {
-.header-third {
-&__list-1 {
-  text-align: left;
-}
-&--footer-header-style {
+  .header-third {
+    &__list-1 {
+      text-align: left;
+    }
+    &--footer-header-style {
       padding: 0 0 20px 0;
+    }
+  }
 }
-}
+
+@media screen and (min-width: 1200px) {
+  .header-third {
+    &--footer-text-style {
+      text-align: left;
+    }
+    &--footer-header-style {
+      text-align: left;
+      padding: 0 12px 0 0;
+      max-width: 358px;
+    }
+  }
 }

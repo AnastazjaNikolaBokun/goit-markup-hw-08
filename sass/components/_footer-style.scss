@@ -75,3 +75,29 @@
 }
 }
 }
+
+@media screen and (min-width: 1200px) {
+.footer-style {
+ &__content {
+  flex-wrap: nowrap;
+  max-width: 1200px;
+      align-items: flex-start;
+}
+&__section1 {
+    text-align: left;
+        padding: 60px 70px 0 0;
+}
+&__section2 {
+    padding: 72px 78px 0 0;
+  }
+  &__section3 {
+  padding: 72px 0 0 0;
+  max-width: 570px;
+  }
+    &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+}
