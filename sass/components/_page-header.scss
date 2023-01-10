@@ -1,8 +1,8 @@
 .header {
   margin: 0 auto;
   display: flex;
-  padding: 0 215px 0 215px;
-  min-height: 80px;
+  padding: 0 15px 0 15px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px $border-header solid;
@@ -10,6 +10,7 @@
   font-weight: 500;
   line-height: 1.17;
   position: relative;
+  max-width: 480px;
   &__navigation {
     display: flex;
     margin: 0 auto;
@@ -17,8 +18,9 @@
     list-style: none;
     position: absolute;
     bottom: -1px;
-    left: 453px;
+    left: 10px;
     padding: 0;
+    display: none;
   }
   &__navigation-item:nth-child(-n + 2) {
     padding-right: 46px;
@@ -26,11 +28,12 @@
   }
   &__address {
     display: flex;
-    width: 666px;
-    padding: 0 0 0 325px;
+    width: 100px;
+    padding: 0 0 0 100px;
     justify-content: flex-end;
     list-style: none;
     align-items: flex-start;
+    display: none;
   }
   &__address-list {
     display: flex;
@@ -56,4 +59,10 @@
   &__icon--smartphone {
     margin: 0 0 0 20px;
   }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

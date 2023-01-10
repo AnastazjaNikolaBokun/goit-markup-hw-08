@@ -26,8 +26,10 @@
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
+  min-height: 609px;
+  max-height: 650px;
+  min-width: 320px;
+  max-width: 450px;
   background-color: $text-color-third;
   position: relative;
   visibility: visible;
@@ -48,7 +50,7 @@
   &__text {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 1.5;
     color: $text-color;
     text-align: center;
     margin: 0;
@@ -121,8 +123,8 @@
   color: $text-color-second;
   position: relative;
   text-align: right;
-  padding-right: 14px;
-  font-size: 14px;
+  padding-left: 24px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -147,7 +149,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 14px;
+  left: 0;
   background: url(../images/checkbox-empty.svg);
 }
 
