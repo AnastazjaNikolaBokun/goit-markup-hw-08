@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+    overflow-y: auto;
 }
 
 .is-hidden {
@@ -47,6 +48,7 @@
   flex-direction: column;
   margin: 0;
   padding-bottom: 10px;
+  overflow: visible;
   &__text {
     font-size: 20px;
     font-weight: 700;
@@ -55,6 +57,9 @@
     text-align: center;
     margin: 0;
     padding-bottom: 12px;
+    &--1200px {
+      display: none;
+    }
   }
   &__label {
     display: flex;
@@ -122,8 +127,8 @@
 .modal-terms {
   color: $text-color-second;
   position: relative;
-  text-align: right;
-  padding-left: 24px;
+  text-align: center;
+  padding-left: 20px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
@@ -160,4 +165,31 @@
   height: 15px;
   background-size: contain;
   background: url(../images/checkbox-marked.svg);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: none;
+    max-width: none;
+    min-height: none;
+    max-height: none;
+    width: 528px;
+    height: 581px;
+  }
+  .modal-terms {
+    font-size: 14px;
+    padding-left: 18px;
+    align-items: center;
+    margin: 15px auto 15px auto;
+  }
+  .checkbox::before {
+    left: 15px;
+  }
+  .modal-content__text {
+    display: none;
+    &--1200px {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
