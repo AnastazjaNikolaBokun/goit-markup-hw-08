@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .is-hidden {
@@ -29,7 +29,6 @@
 .modal {
   min-height: 609px;
   max-height: 650px;
-  min-width: 320px;
   max-width: 450px;
   background-color: $text-color-third;
   position: relative;
@@ -167,9 +166,18 @@
   background: url(../images/checkbox-marked.svg);
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    max-width: none;
+    min-height: none;
+    max-height: none;
+    width: 90%;
+    padding: 40px 20px 40px 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: none;
     max-width: none;
     min-height: none;
     max-height: none;
