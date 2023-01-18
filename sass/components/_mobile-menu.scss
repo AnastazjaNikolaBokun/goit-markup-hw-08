@@ -51,6 +51,7 @@
   padding: 0;
   background-color: $text-color-third;
   z-index: 999;
+  overflow: auto;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -105,5 +106,4 @@
     padding: 0 10px 0 0;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
-  
 }
