@@ -1,16 +1,18 @@
 .header {
-  margin: 0 auto;
-  display: flex;
-  padding: 0 15px 0 15px;
-  height: 60px;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px $border-header solid;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
-  position: relative;
-  max-width: 480px;
+  &__content {
+    display: flex;
+    max-width: 480px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 15px 0 15px;
+    height: 60px;
+    margin: 0 auto;
+  }
   &__navigation {
     display: flex;
     margin: 0 auto;
@@ -66,8 +68,10 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 768px;
-    height: 80px;
+    &__content {
+      max-width: 768px;
+          height: 80px;
+    }
     &__navigation {
       display: flex;
     }
@@ -82,7 +86,9 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    max-width: 1200px;
+    &__content {
+      max-width: 1200px;
+    }
     &__address {
       font-size: 14px;
       line-height: 1.17;

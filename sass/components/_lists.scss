@@ -142,16 +142,19 @@
 .picture-list-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
   list-style: none;
   margin: 0 auto;
-  max-width: 1200px;
+  justify-content: center;
+  padding: 0;
+  max-width: 450px;
+  min-width: 290px;
   cursor: pointer;
   color: $text-color-second;
   &__figure {
     background-color: $text-color-third;
-    margin: 0;
-    width: 370px;
+    margin: 0 auto;
+    width: 100%;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -165,21 +168,25 @@
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 49px 45px 49px 24px;
+    padding: 77px 24px 77px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     color: $text-color-third;
     transform: translateY(100%);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.87;
+    line-height: 1.55;
     margin: 0;
   }
   &__picture {
     position: relative;
     overflow: hidden;
+    max-height: 290px;
   }
   &__img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   &__figcaption {
     border-left: 1px solid rgb(238, 238, 238);
@@ -210,11 +217,13 @@
 
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0 0 50px 0;
-  max-width: 572px;
+  padding: 0 0 40px 0;
+  gap: 8px;
+  max-width: 450px;
   list-style: none;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 @media screen and (min-width: 768px) {
@@ -247,6 +256,27 @@
       height: 374px;
     }
   }
+  .picture-list-3 {
+    width: 738px;
+    max-width: none;
+    min-width: none;
+    justify-content: space-between;
+    &__picture {
+      max-height: none;
+      min-height: 294px;
+      width: 354px;
+    }
+    &__overlay {
+      padding: 49px 24px 49px 24px;
+    }
+    &__figcaption {
+      padding: 20px 24px 56px 24px;
+    }
+  }
+  .button-list {
+    max-width: 646px;
+    padding: 0 0 30px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -276,5 +306,20 @@
       width: 270px;
       height: 260px;
     }
+  }
+  .picture-list-3 {
+    width: 1170px;
+    &__picture {
+      width: 370px;
+    }
+    &__overlay {
+      padding: 49px 45px 49px 24px;
+    }
+    &__figcaption {
+      padding: 20px 24px 20px 24px;
+    }
+  }
+  .button-list {
+    padding: 0 0 50px 0;
   }
 }
